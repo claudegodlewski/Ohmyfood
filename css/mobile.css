@@ -274,6 +274,18 @@ input {
     background:#f0e7f8
     }
 
+.boutonFonctionnement:hover .fa-mobile {
+    color:#9d6cd8;
+    }
+
+.boutonFonctionnement:hover .fa-list-ul {
+    color:#9d6cd8;
+    }
+
+.boutonFonctionnement:hover .fa-store {
+    color:#9d6cd8;
+    }
+
 .titre3 {
     display: flex;
     justify-content: center;
@@ -342,12 +354,68 @@ figcaption {
     margin-left:10px;
 }
 
+.logoPiedDePage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-family: "Shrikhand", Helvetica, sans-serif;
+}
+
 #sectionPiedDePage {
     color:#FFFFFF;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    background: #5f5d5d;
+    text-align: center;
+    background: #3a3939;
+}
+
+.fa-utensils {
+    margin-left:0px;
+    margin-right:10px;
+    text-align: left;
+}
+
+.fa-handshake {
+    margin-left:0px;
+    margin-right:10px;
+    text-align: left;
+}
+
+.grasPiedDePage {
+    margin:auto;
+    font-weight: bold;
+}
+
+a.grasPiedDePage:link {
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+a.grasPiedDePage:visited {
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+a.normalPiedDePage:link {
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+a.normalPiedDePage:visited {
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+.normalPiedDePage {
+    margin:auto;
+    font-weight: normal;
+}
+
+ul {
+list-style: none;
+margin-bottom: 30px;
 }
 
 @media (max-width: 639px) {
@@ -377,8 +445,14 @@ figcaption {
     font-weight: bold;
     background: #F6F6F6;
     }
-.logoPiedDePage {
-    margin: 10px;
-    font-family: "Shrikhand", Helvetica, sans-serif;
+#sectionPiedDePage {
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    background: #3a3939;
+    font-weight: bold;
+    padding-left:10px;
 }
 }
