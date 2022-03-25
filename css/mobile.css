@@ -4,7 +4,7 @@ body {
     background:#FFFFFF;
     }
 
-a , a:hover, .a:focus, .a:active {
+a, a:hover, .a:focus, .a:active {
     color: #000000;
     text-decoration:none;
 }
@@ -143,7 +143,7 @@ a , a:hover, .a:focus, .a:active {
     /* Section fonctionnement */
     #sectionFonctionnement {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
         background: #ffffff;
@@ -327,7 +327,7 @@ a , a:hover, .a:focus, .a:active {
     /* Section restaurants */
     #sectionRestaurants {
         display: flex;
-        justify-content: center;
+        justify-content:space-around;
         align-content: center;
         flex-wrap: wrap;
         text-align: left;
@@ -396,7 +396,6 @@ a , a:hover, .a:focus, .a:active {
     }        
 
     figure {
-        margin:10px;
         border-radius: 15px 15px 15px 15px;
         background: #FFFFFF;
         width: 335px; 
@@ -414,7 +413,7 @@ a , a:hover, .a:focus, .a:active {
         position: absolute;
         font-weight: normal;
         margin-top:-45px;
-        margin-left:20px;
+        margin-left:50px;
     }
 
     /* Section restaurants */
