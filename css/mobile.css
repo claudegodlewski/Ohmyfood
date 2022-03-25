@@ -352,6 +352,7 @@ body {
     margin-left:290px;
     margin-top:15px;
     font-size: 25px;
+    cursor: pointer;
     }
 
     .cartesCoeur1:hover > .cartesCoeur2 {
