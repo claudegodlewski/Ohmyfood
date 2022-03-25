@@ -279,6 +279,7 @@ a , a:hover, .a:focus, .a:active {
         box-shadow: 0px 3px 10px -5px black;
         transition: 2s;
         cursor: pointer;
+        background:#F6F6F6;
         }
 
     .boutonFonctionnement:hover {
@@ -406,16 +407,15 @@ a , a:hover, .a:focus, .a:active {
         margin-left:10px;
         margin-top:10px;
         padding:0;
-        height:30px;
+        height:60px;
     }
 
     .texteCarte {
-        font-weight:normal;
-        margin-top:0;
-        margin-left:10px;
+        position: absolute;
+        font-weight: normal;
+        margin-top:-45px;
+        margin-left:20px;
     }
-
-  
 
     /* Section restaurants */
 
