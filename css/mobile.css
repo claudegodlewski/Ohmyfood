@@ -4,7 +4,7 @@ body {
     background:#FFFFFF;
     }
 
-a {
+a , a:hover, .a:focus, .a:active {
     color: #000000;
     text-decoration:none;
 }
