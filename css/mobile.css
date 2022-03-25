@@ -4,6 +4,10 @@ body {
     background:#FFFFFF;
     }
 
+a {
+    color: #000000;
+    text-decoration:none;
+}
 
 /* # En-tête # */
 
@@ -13,7 +17,7 @@ body {
      margin-right: auto;
      margin-top: 20px;
      margin-bottom: 20px;
-    }
+}
 
 /* # En-tête # */
 
@@ -410,6 +414,9 @@ body {
         margin-top:0;
         margin-left:10px;
     }
+
+  
+
     /* Section restaurants */
 
 /* # Principal # */
@@ -446,34 +453,18 @@ body {
     text-align: left;
 }
 
-.grasPiedDePage {
+.grasPiedDePage, .grasPiedDePage:hover, .grasPiedDePage:focus, .grasPiedDePage:active {
     margin:auto;
     font-weight: bold;
-}
-
-a.grasPiedDePage:link {
-    text-decoration: none; 
     color: #FFFFFF;
+    text-decoration:none;
 }
 
-a.grasPiedDePage:visited {
-    text-decoration: none; 
-    color: #FFFFFF;
-}
-
-a.normalPiedDePage:link {
-    text-decoration: none; 
-    color: #FFFFFF;
-}
-
-a.normalPiedDePage:visited {
-    text-decoration: none; 
-    color: #FFFFFF;
-}
-
-.normalPiedDePage {
+.normalPiedDePage, .normalPiedDePage:hover, .normalPiedDePage:focus, .normalPiedDePage:active {
     margin:auto;
     font-weight: normal;
+    color: #FFFFFF;
+    text-decoration:none;
 }
 
 ul {
