@@ -493,63 +493,35 @@ margin-bottom: 30px;
 
 /* # Spinner # */
 
-.spinner {
+  .loading {
     display: flex;
     justify-content: center;
-    margin:auto;
-    position: absolute;
+    align-items: center;
+    position:fixed;
+    top:0px;
     width: 100%;
     height: 100%;
-    background: #ffffff;
-    opacity: 0;
-    animation-name: fonduSpinner;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-}
+    background-color: white;
+    z-index: 1;
+    animation: loader-disappear 500ms 3000ms forwards;
+  }
+  .fa-circle-notch {
+    color: #9356DC;
+    font-size:60px
+  }
+  @keyframes loader-disappear {
+    0% {
+        background-color: #9356DC;
+    }
+    25% {
+        background-color: #FF79DA;
+    }
+    50% {
+        background-color: #99E2D0;
+    }
+    100% {
+        z-index: -1;
+    }
+  }
 
-.spinner::after {
-    content: "";
-    border: 8px solid #9356dc;
-    border-top: 8px solid #9356dc;
-    border-right: 8px solid #ff79da;
-    border-bottom: 8px solid #ff79da;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: chargementSpinner 800ms linear infinite;
-}
-
-@keyframes fonduSpinner {
-0% {
-    opacity: 0.5;
-    z-index: 1000;
-}
-25% {
-    opacity: 1.0;
-    z-index: 1000;
-}
-50% {
-    opacity: 0.5;
-    z-index: 1000;
-}
-75% {
-    opacity: 1.0;
-    z-index: 1000;
-}
-100% {
-    opacity: 0;
-    z-index: 1000;
-}
-}
-
-@keyframes chargementSpinner {
-0% {
-transform: rotate(0deg);
-}
-100% {
-transform: rotate(360deg);
-}
-}
-    
   /* # Spinner # */
