@@ -1,8 +1,12 @@
 body {
     color: #000000;
     font-family: 'Roboto', Helvetica, sans-serif;
-    background:#FFFFFF;
+    max-width:100%;
     }
+
+main { 
+background: #F6F6F6;
+}
 
 a, a:hover, .a:focus, .a:active {
     color: #000000;
@@ -10,7 +14,6 @@ a, a:hover, .a:focus, .a:active {
 }
 
 /* # En-tête # */
-
 .logo {
      display: flex;
      margin-left: auto;
@@ -18,9 +21,13 @@ a, a:hover, .a:focus, .a:active {
      margin-top: 20px;
      margin-bottom: 20px;
 }
-
+.fa-arrow-left {
+    position: absolute;
+    color: #000000;
+    margin-top: -42px;
+    margin-left: 25px;
+}
 /* # En-tête # */
-
 
 /* # Principal # */
 
@@ -64,20 +71,14 @@ a, a:hover, .a:focus, .a:active {
 
     .titre1 {
         margin: auto;
-        font-size: 24px;
-        font-weight: bold;
         padding-top:35px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        font-size: 25px;
+        font-weight: bold;
         text-align: center;
         background: #F6F6F6;
         }
 
     .soustitre {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         text-align: center;
         margin: 35px;
         color:#696666;
@@ -125,16 +126,13 @@ a, a:hover, .a:focus, .a:active {
 
 
     .titre2 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: 0px;
+        margin: auto;
         padding-left: 20px;
         padding-top: 50px;
         padding-bottom: 20px;
         font-size: 24px;
         font-weight: bold;
+        text-align: center;
         background: #ffffff;
         }
 
@@ -335,6 +333,14 @@ a, a:hover, .a:focus, .a:active {
         padding-bottom:50px;
         }
 
+    .cartesRestaurants {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+        height: 200px;
+        margin:0;
+        }        
+
     .cartesNouveau {
         background: #99E2D0;
         width: 55px;
@@ -349,155 +355,210 @@ a, a:hover, .a:focus, .a:active {
         color: #335f55;
         }
 
-    /* Coeur */
+    figure {
+        width: 335px;
+        border-radius: 15px 15px 15px 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 10px -5px black;
+        }
+
+    figcaption {
+        width: 335px; 
+        margin-left:10px;
+        margin-top:10px;
+        padding:0;
+        height:60px;
+        }
+
+    .texteCarte {
+        text-align: left;
+        position: absolute;
+        font-weight: normal;
+        margin-top:-45px;
+        margin-left:50px;
+        }
+
+        /* Coeur */
     .cartesCoeur1 {
-    position: absolute;
-    color: #000000;
-    margin-left:290px;
-    margin-top:15px;
-    font-size: 25px;
-    cursor: pointer;
-    }
+        display: flex;
+        justify-content: flex-end;
+
+        color: #000000;
+        margin-left:290px;
+        margin-top:155px;
+        font-size: 25px;
+        cursor: pointer;
+        }
 
     .cartesCoeur1:hover > .cartesCoeur2 {
-    animation: fill 500ms forwards;
-    /* animation keyframe fill effect for heart */
+        animation: fill 500ms forwards;
+        /* animation keyframe fill effect for heart */
     }
-    
+
     .cartesCoeur2 {
-    position: absolute;
-    top: 1px;
-    left: 0px;
-    font-weight: bold !important;
+        position: absolute;
+        top: 1px;
+        left: 0px;
+        font-weight: bold !important;
 
     /* Dégradé */
-    background: linear-gradient(#9356DC, #FF79DA);
+        background: linear-gradient(#9356DC, #FF79DA);
     /* Dégradé */
 
     /* Compatibilité Chrome */
-    -webkit-background-clip: text;
+        -webkit-background-clip: text;
     /* Compatibilité Chrome */
 
     /* Effet de remplissage */
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
     /* Effet de remplissage */
     }
 
     @keyframes fill {
         0% {
-          transform: scale(0);
-          animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
-        }
+        transform: scale(0);
+        animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
+    }
         100% {
-          transform: scale(1);
-        }
+        transform: scale(1);
+    }
     }
     /* Coeur */
 
-    .cartesRestaurants {
-        object-fit: cover;
-        border-radius: 15px 15px 0px 0px;
-        width: 335px;
-        height: 200px;
-        margin:0;
-    }        
-
-    figure {
-        border-radius: 15px 15px 15px 15px;
-        background: #FFFFFF;
-        width: 335px; 
-        box-shadow: 0px 3px 10px -5px black;
+  #menusImages {
+        display: flex;
+        width: 100%;
+        max-width: 810px;
+        min-width:375px;
+        min-height:250px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    figcaption {
-        margin-left:10px;
-        margin-top:10px;
-        padding:0;
-        height:60px;
+    #menusRestaurants {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        background: #F6F6F6;
+        padding-top: 80px;
+        margin-top:-50px;
+        max-width:809px;
+        width:100%;
+        border-radius: 30px 30px 0px 0px;
+        position:relative;
+        margin-left:auto;
+        margin-right: auto;
     }
 
-    .texteCarte {
+    #menusTitres {
+        
+        font-size: 25px;
         position: absolute;
-        font-weight: normal;
-        margin-top:-45px;
-        margin-left:50px;
+        margin-top: -50px;
+        margin-left: 20px;
+        margin-right: 10px;
+        font-family: "Shrikhand", Helvetica, sans-serif;
     }
 
-    /* Section restaurants */
+    #entree {
+        position:absolute;
+        font-size: 16px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #99E2D0;
+        width: 40px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #plats {
+        position:absolute;
+        font-size: 16px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #99E2D0;
+        width: 40px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    #desserts {
+        position:absolute;
+        font-size: 16px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #99E2D0;
+        width: 40px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .menusCoeurs1 {
+   /* Coeur */
+        position: absolute;
+        color: #000000;
+        margin-left:300px;
+        margin-top:-50px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menusCoeurs1:hover > .menusCoeurs2 {
+        animation: fill 500ms forwards;
+    /* animation keyframe fill effect for heart */
+    }
+
+    .menusCoeurs2 {
+        position: absolute;
+        top: 1px;
+        left: 0px;
+        font-weight: bold !important;
+
+    /* Dégradé */
+        background: linear-gradient(#9356DC, #FF79DA);
+    /* Dégradé */
+
+    /* Compatibilité Chrome */
+        -webkit-background-clip: text;
+    /* Compatibilité Chrome */
+
+    /* Effet de remplissage */
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+    /* Effet de remplissage */
+    }
+
+    @keyframes fill {
+        0% {
+        transform: scale(0);
+        animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
+    }
+        100% {
+        transform: scale(1);
+    }
+    }
+}
+/* Section restaurants */
 
 /* # Principal # */
 
-
-/* # Section pied de page # */
-
-.logoPiedDePage {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 10px;
-    font-family: "Shrikhand", Helvetica, sans-serif;
-}
-
-#sectionPiedDePage {
-    color:#FFFFFF;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    background: #3a3939;
-}
-
-.fa-utensils {
-    margin-left:0px;
-    margin-right:10px;
-    text-align: left;
-}
-
-.fa-handshake {
-    margin-left:0px;
-    margin-right:10px;
-    text-align: left;
-}
-
-.grasPiedDePage, .grasPiedDePage:hover, .grasPiedDePage:focus, .grasPiedDePage:active {
-    margin:auto;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-decoration:none;
-}
-
-.normalPiedDePage, .normalPiedDePage:hover, .normalPiedDePage:focus, .normalPiedDePage:active {
-    margin:auto;
-    font-weight: normal;
-    color: #FFFFFF;
-    text-decoration:none;
-}
-
-ul {
-list-style: none;
-margin-bottom: 30px;
-}
-
-/* # Section pied de page # */
-
-
 /* # Media queries # */
+@media (max-width: 809px) {
 
-@media (max-width: 639px) {
 .titre2 {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0px;
+    margin: auto;
     padding-left: 20px;
     padding-top: 50px;
     padding-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
     background: #ffffff;
-    }
+}
+
 .titre3 {
     display: flex;
     justify-content: flex-start;
@@ -511,6 +572,7 @@ margin-bottom: 30px;
     font-weight: bold;
     background: #F6F6F6;
     }
+
 #sectionPiedDePage {
     color:#ffffff;
     display: flex;
@@ -522,12 +584,10 @@ margin-bottom: 30px;
     padding-left:10px;
 }
 }
-
 /* # Media queries # */
 
 
 /* # Spinner # */
-
   .loading {
     display: flex;
     justify-content: center;
@@ -558,5 +618,220 @@ margin-bottom: 30px;
         z-index: -1;
     }
   }
-
   /* # Spinner # */
+
+  @keyframes card-appear {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+    /* Effet sur la longueur au survol */
+  .MenuDescription1 {
+    font-weight:bold;
+    font-size: 17px;
+    margin-left:10px;
+    margin-top:10px;
+    width: 80%;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+  }
+    /* Apparition des cartes unes à unes */
+  .MenuMicroCartes {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    width: 95%;
+    height: 70px;
+    max-width: 810px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 3px 10px -7px black;
+            box-shadow: 0px 3px 10px -7px black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    overflow: hidden;
+    position: relative;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    opacity: 0;
+    -webkit-animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
+            animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
+  }
+  .entree1 {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:55px;
+    /* loop to add delay at each card */
+  }
+  .entree2 {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .entree3 {
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .plat4 {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .plat5 {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms;
+            -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .plat6 {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .dessert7 {
+    -webkit-animation-delay: 1050ms;
+            animation-delay: 1050ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .dessert8 {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .dessert9 {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  #menusDescription {
+    text-align: left;
+    position: absolute;
+    font-weight: normal;
+    margin-top:15px;
+    margin-left:0px;
+}
+  /* .MenuDescription2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 17px;
+    margin-bottom: 7px;
+    margin-left: 11px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+  } */
+  .MenuDescription3 {
+    margin-left: 11px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .effetDroite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: -60px;
+    height: 100%;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
+    -o-transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  }
+  .MenuMicroCartes:hover > .effetDroite {
+    -webkit-transform: translateX(-60px);
+        -ms-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  .MenuMicroCartes:hover .fa-check-circle {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .MenuMicroCartes:hover > .MenuDescription1 {
+    width: calc(80% - 60px);
+  }
+  
+
+  /* Prix */
+  .prix {
+    text-align:left;
+    margin-left:25px;
+    top:26px;
+    position:absolute;
+    font-weight: bold;
+    font-size:15px;
+
+  }
+  
+  
+  /* Checkbox droite */
+  .checkboxDroite {
+    background-color: #99E2D0;
+    width: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0px 15px 15px 0px;
+    height: 100%;
+  }
+  
+  /* Effet sur l'icône à l'intérieur de la checkbox */
+  .fa-check-circle {
+    font-size: 20px;
+    color: white;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
+    -o-transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  }
