@@ -320,7 +320,6 @@ a, a:hover, .a:focus, .a:active {
         background: #F6F6F6;
         }
 
-
     /* Section restaurants */
     #sectionRestaurants {
         display: flex;
@@ -380,12 +379,10 @@ a, a:hover, .a:focus, .a:active {
 
         /* Coeur */
     .cartesCoeur1 {
-        display: flex;
-        justify-content: flex-end;
-
+        position: absolute;
         color: #000000;
         margin-left:290px;
-        margin-top:155px;
+        margin-top:15px;
         font-size: 25px;
         cursor: pointer;
         }
@@ -426,18 +423,18 @@ a, a:hover, .a:focus, .a:active {
     }
     /* Coeur */
 
-  #menusImages {
+    #menusImages {
         display: flex;
         width: 100%;
         max-width: 810px;
-        min-width:375px;
+        min-width: 375px;
         min-height:250px;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     #menusRestaurants {
         display: flex;
         justify-content: flex-start;
@@ -454,15 +451,14 @@ a, a:hover, .a:focus, .a:active {
     }
 
     #menusTitres {
-        
         font-size: 25px;
         position: absolute;
         margin-top: -50px;
-        margin-left: 20px;
+        margin-left:20px;
         margin-right: 10px;
         font-family: "Shrikhand", Helvetica, sans-serif;
     }
-
+    
     #entree {
         position:absolute;
         font-size: 16px;
@@ -541,11 +537,74 @@ a, a:hover, .a:focus, .a:active {
     }
     }
 }
-/* Section restaurants */
+
+
+
+
+
+
+
+    /* Section restaurants */
+
 
 /* # Principal # */
 
+
+/* # Section pied de page # */
+
+.logoPiedDePage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-family: "Shrikhand", Helvetica, sans-serif;
+}
+
+#sectionPiedDePage {
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #3a3939;
+}
+
+.fa-utensils {
+    margin-left:0px;
+    margin-right:10px;
+    text-align: left;
+}
+
+.fa-handshake {
+    margin-left:0px;
+    margin-right:10px;
+    text-align: left;
+}
+
+.grasPiedDePage, .grasPiedDePage:hover, .grasPiedDePage:focus, .grasPiedDePage:active {
+    margin:auto;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+.normalPiedDePage, .normalPiedDePage:hover, .normalPiedDePage:focus, .normalPiedDePage:active {
+    margin:auto;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+/* # Section pied de page # */
+
+
 /* # Media queries # */
+
 @media (max-width: 809px) {
 
 .titre2 {
@@ -584,10 +643,12 @@ a, a:hover, .a:focus, .a:active {
     padding-left:10px;
 }
 }
+
 /* # Media queries # */
 
 
 /* # Spinner # */
+
   .loading {
     display: flex;
     justify-content: center;
@@ -618,6 +679,7 @@ a, a:hover, .a:focus, .a:active {
         z-index: -1;
     }
   }
+
   /* # Spinner # */
 
   @keyframes card-appear {
