@@ -1,4 +1,4 @@
-body, header, main {
+body, main {
     color: #000000;
     font-family: 'Roboto', Helvetica, sans-serif;
     max-width:100%;
@@ -432,6 +432,18 @@ a, a:hover, .a:focus, .a:active {
         margin-right: auto;
     }
     
+    /* #specialLaNoteEnchantee {
+        display: flex;
+        width: 100%;
+        max-width: 810px;
+        min-width: 375px;
+        min-height:250px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
     #menusRestaurants {
         display: flex;
         justify-content: flex-start;
@@ -467,7 +479,7 @@ a, a:hover, .a:focus, .a:active {
         margin-top: 10px;
     }
 
-    #plats {
+  #plats {
         position:absolute;
         font-size: 16px;
         margin-left: 20px;
@@ -476,6 +488,17 @@ a, a:hover, .a:focus, .a:active {
         width: 40px;
         padding-bottom: 10px;
         margin-top: 40px;
+    }
+
+    #platsLaNoteEnchantee {
+        position:absolute;
+        font-size: 16px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #99E2D0;
+        width: 40px;
+        padding-bottom: 10px;
+        margin-top: 120px;   
     }
 
     #desserts {
@@ -535,13 +558,7 @@ a, a:hover, .a:focus, .a:active {
     }
 }
 
-
-
-
-
-
-
-    /* Section restaurants */
+/* Section restaurants */
 
 
 /* # Principal # */
@@ -566,6 +583,13 @@ a, a:hover, .a:focus, .a:active {
     background: #3a3939;
 }
 
+.logoPiedDePage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-family: "Shrikhand", Helvetica, sans-serif;
+}
 .fa-utensils {
     margin-left:0px;
     margin-right:10px;
@@ -600,52 +624,10 @@ ul {
 /* # Section pied de page # */
 
 
-/* # Media queries # */
 
-@media (max-width: 809px) {
-
-.titre2 {
-    margin: auto;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    background: #ffffff;
-}
-
-.titre3 {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0px;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    background: #F6F6F6;
-    }
-
-#sectionPiedDePage {
-    color:#ffffff;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    text-align: left;
-    background: #3a3939;
-    font-weight: bold;
-    padding-left:10px;
-}
-}
-
-/* # Media queries # */
 
 
 /* # Spinner # */
-
   .loading {
     display: flex;
     justify-content: center;
@@ -676,7 +658,6 @@ ul {
         z-index: -1;
     }
   }
-
   /* # Spinner # */
 
   @keyframes card-appear {
@@ -693,9 +674,9 @@ ul {
   }
 
     /* Effet sur la longueur au survol */
-  .MenuDescription1 {
+  #menusDescription1 {
     font-weight:bold;
-    font-size: 17px;
+    font-size: 14px;
     margin-left:10px;
     margin-top:10px;
     width: 80%;
@@ -704,7 +685,7 @@ ul {
     transition: all 500ms;
   }
     /* Apparition des cartes unes à unes */
-  .MenuMicroCartes {
+  .menuMicroCartes {
     display: flex;
     justify-content:center;
     align-items: center;
@@ -725,7 +706,7 @@ ul {
     -webkit-animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
             animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
   }
-  .entree1 {
+  .laPaletteDuGout1 {
     -webkit-animation-delay: 150ms;
             animation-delay: 150ms;
             margin-left:auto;
@@ -733,7 +714,7 @@ ul {
             margin-top:55px;
     /* loop to add delay at each card */
   }
-  .entree2 {
+  .laPaletteDuGout2 {
     -webkit-animation-delay: 300ms;
             animation-delay: 300ms;
             margin-left:auto;
@@ -741,7 +722,7 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  .entree3 {
+  .laPaletteDuGout3 {
     -webkit-animation-delay: 450ms;
             animation-delay: 450ms;
             margin-left:auto;
@@ -749,7 +730,7 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  .plat4 {
+  .laPaletteDuGout4 {
     -webkit-animation-delay: 600ms;
             animation-delay: 600ms;
             margin-left:auto;
@@ -757,7 +738,7 @@ ul {
             margin-top:85px;
     /* loop to add delay at each card */
   }
-  .plat5 {
+  .laPaletteDuGout5 {
     -webkit-animation-delay: 750ms;
             animation-delay: 750ms;
             -webkit-animation-delay: 600ms;
@@ -767,7 +748,7 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  .plat6 {
+  .laPaletteDuGout6 {
     -webkit-animation-delay: 900ms;
             animation-delay: 900ms;
             margin-left:auto;
@@ -775,7 +756,8 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  .dessert7 {
+  
+  .laPaletteDuGout7 {
     -webkit-animation-delay: 1050ms;
             animation-delay: 1050ms;
             margin-left:auto;
@@ -783,7 +765,7 @@ ul {
             margin-top:85px;
     /* loop to add delay at each card */
   }
-  .dessert8 {
+  .laPaletteDuGout8 {
     -webkit-animation-delay: 1200ms;
             animation-delay: 1200ms;
             margin-left:auto;
@@ -791,7 +773,7 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  .dessert9 {
+  .laPaletteDuGout9 {
     -webkit-animation-delay: 1350ms;
             animation-delay: 1350ms;
             margin-left:auto;
@@ -799,26 +781,263 @@ ul {
             margin-top:10px;
     /* loop to add delay at each card */
   }
-  #menusDescription {
+  .aLaFrancaise1 {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:55px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise2 {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise3 {
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise4 {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise5 {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms;
+            -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise6 {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  
+  .aLaFrancaise7 {
+    -webkit-animation-delay: 1050ms;
+            animation-delay: 1050ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise8 {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .aLaFrancaise9 {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee1 {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:55px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee2 {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee3 {
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee4 {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee5 {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms;
+            -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee6 {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  
+  .laNoteEnchantee7 {
+    -webkit-animation-delay: 1050ms;
+            animation-delay: 1050ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee8 {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee9 {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .laNoteEnchantee10 {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens1 {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:55px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens2 {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens3 {
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens4 {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens5 {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms;
+            -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens6 {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  
+  .leDeliceDesSens7 {
+    -webkit-animation-delay: 1050ms;
+            animation-delay: 1050ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:85px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens8 {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  .leDeliceDesSens9 {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10px;
+    /* loop to add delay at each card */
+  }
+  /* #menusDescription {
     text-align: left;
     position: absolute;
     font-weight: normal;
     margin-top:15px;
     margin-left:0px;
-}
-  /* .MenuDescription2 {
+    -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+} */
+  #menusDescription2 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 17px;
+    margin-top: 0px;
     margin-bottom: 7px;
     margin-left: 11px;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     overflow: hidden;
-  } */
-  .MenuDescription3 {
+  }
+  #menusDescription3 {
     margin-left: 11px;
+    font-weight:normal;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
@@ -837,27 +1056,31 @@ ul {
     transition: transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   }
-  .MenuMicroCartes:hover > .effetDroite {
+  .menuMicroCartes:hover > .effetDroite {
     -webkit-transform: translateX(-60px);
         -ms-transform: translateX(-60px);
             transform: translateX(-60px);
   }
-  .MenuMicroCartes:hover .fa-check-circle {
+  .menuMicroCartes:hover .fa-check-circle {
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-  .MenuMicroCartes:hover > .MenuDescription1 {
+  .menuMicroCartes:hover > .menusDescription1 {
     width: calc(80% - 60px);
   }
   
 
   /* Prix */
   .prix {
-    text-align:left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-item-align: end;
+      align-self: flex-end;
+      text-align:left;
     margin-left:25px;
     top:26px;
-    position:absolute;
+    position:relative;
     font-weight: bold;
     font-size:15px;
 
@@ -866,6 +1089,7 @@ ul {
   
   /* Checkbox droite */
   .checkboxDroite {
+
     background-color: #99E2D0;
     width: 60px;
     display: -webkit-box;
@@ -934,3 +1158,52 @@ height: 50px;
   border-radius: 25px;
   border: solid 0px;
   }
+  /* # Media queries # */
+
+@media (max-width: 809px) {
+
+    .titre2 {
+        margin: auto;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        background: #ffffff;
+    }
+    
+    .titre3 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0px;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        background: #F6F6F6;
+        }
+    
+    #sectionPiedDePage {
+        color:#ffffff;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        text-align: left;
+        background: #3a3939;
+        font-weight: bold;
+        padding-left:10px;
+    }
+    .logoPiedDePage {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 10px;
+        font-family: "Shrikhand", Helvetica, sans-serif;
+    }
+    }
+    
+    /* # Media queries # */
