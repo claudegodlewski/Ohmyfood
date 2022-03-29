@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <title>Ohmyfood!</title>
+    <title>Ohmyfood! - La palette du goût</title>
 </head>
 <!-- # Informations générales # -->
 
@@ -21,43 +21,71 @@
     <header>
         <div>
             <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood!" title="Ohmyfood!">
-            <i class="fa fa-arrow-left"></i>
+            <a href="index.html"><i class="fa fa-arrow-left"></i></a>
         </div>
     </header>
 <!-- # En-tête # -->
 
 <!-- # Principal # -->
 <main>
+    <!-- Section restaurants -->   
+    <div><img id="menusImages" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay-wennington-N_Y88TWmGwA-unsplash"></div>
 
-        <!-- Section restaurants -->   
+    <div id="menusRestaurants">
 
-        <div><img id="menusImages" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay-wennington-N_Y88TWmGwA-unsplash"></div>
+        <div id="menusTitres">La palette du goût</div>
+        <div id="entrees">Entrées</div>
+        <div id="plats">Plats</div>
+        <div id="desserts">Desserts</div>
 
-        <div id="menusRestaurants">
-
-            <div id="menusTitres">La palette du goût</div>
-
-            <div class="menusCoeurs1">
-                <i class="far fa-heart"></i>      
-                <i class="far fa-heart menusCoeurs2"></i>
-            </div>
-
-        </div> 
-
-        <!-- Entrées -->
-
-            <div id="entree">Entrées</div>
-
-    <div class="menuMicroCartes laPaletteDuGout1">
-
-        <div id="menusDescription1">
-            <div id="menusDescription2">Fricassée d'escargot</div>
-            <p id="menusDescription3">Au piment d'Espelette</p>
+        <div class="menusCoeurs1">
+            <i class="far fa-heart"></i>      
+            <i class="far fa-heart menusCoeurs2"></i>
         </div>
 
-        <div class="prix">25€</div>
+    </div> 
+
+    <div class="menuMicroCartes element1">
+
+        <div class="menusDescription1">
+            <div class="menusDescription2">Fricassée d'escargot</div>
+            <div class="menusDescription3">Au piment d'Espelette</div>
+        </div>
+                
+        <div class="effetDroite">
+            <div class="prix">25€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </div>                
+    
+    </div>
+
+    <div class="menuMicroCartes element2">
+
+        <div class="menusDescription1">
+            <div class="menusDescription2">Foie gras de canard mi-cuit</div>
+            <div class="menusDescription3">Et ses copeaux de truffe noire</div>
+        </div>
+                
+        <div class="effetDroite">
+            <div class="prix">35€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </div>                
+    
+    </div>
+
+    <div class="menuMicroCartes element3">
+
+        <div class="menusDescription1">
+            <div class="menusDescription2">Oeuf au plat</div>
+            <div class="menusDescription3">Assaisonné à la truffe sur lit de caviar</div>
+        </div>
 
         <div class="effetDroite">
+            <div class="prix">20€</div>
             <div class="checkboxDroite">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -65,16 +93,15 @@
 
     </div>
 
-    <div class="menuMicroCartes laPaletteDuGout2">
+    <div class="menuMicroCartes element4">
 
-        <div id="menusDescription1">
-            <div id="menusDescription2">Foie gras de canard mi-cuit</div>
-            <p id="menusDescription3">Et ses copeaux de truffe noire</p>
+        <div class="menusDescription1">
+            <div class="menusDescription2">Filet de boeuf aux herbes</div>
+            <div class="menusDescription3">Accompagné de sa ribambelle de légumes</div>
         </div>
 
-        <div class="prix">35€</div>
-
         <div class="effetDroite">
+            <div class="prix">40€</div>
             <div class="checkboxDroite">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -82,16 +109,15 @@
 
     </div>
 
-    <div class="menuMicroCartes laPaletteDuGout3">
+    <div class="menuMicroCartes element5">
 
-        <div id="menusDescription1">
-            <div id="menusDescription2">Oeuf au plat</div>
-            <p id="menusDescription3">Assaisonné à la truffe sur lit de caviar</p>
+        <div class="menusDescription1">
+            <div class="menusDescription2">Parmentier de queue de boeuf</div>
+            <div class="menusDescription3">À la truffe noire sur sa purée de panais</div>
         </div>
 
-        <div class="prix">20€</div>
-
         <div class="effetDroite">
+            <div class="prix">35€</div>
             <div class="checkboxDroite">
                 <i class="fas fa-check-circle"></i>
             </div>
@@ -99,126 +125,78 @@
 
     </div>
 
-        <!-- Plats -->
+    <div class="menuMicroCartes element6">
 
-            <div id="plats">Plats</div>
+        <div class="menusDescription1">
+            <div class="menusDescription2">Filet de turbot</div>
+            <div class="menusDescription3">Aux agrumes</div>
+        </div>
 
-            <div class="menuMicroCartes laPaletteDuGout4">
-
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Filet de boeuf aux herbes</div>
-                    <p id="menusDescription3">Accompagné de sa ribambelle de légumes</p>
-                </div>
-        
-                <div class="prix">40€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
+        <div class="effetDroite">
+            <div class="prix">44€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
             </div>
+        </div>
 
-            <div class="menuMicroCartes laPaletteDuGout5">
+    </div>
 
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Parmentier de queue de boeuf</div>
-                    <p id="menusDescription3">À la truffe noire sur sa purée de panais</p>
-                </div>
-        
-                <div class="prix">35€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
+    <div class="menuMicroCartes element7">
+
+        <div class="menusDescription1">
+            <div class="menusDescription2">Paris-Brest</div>
+            <div class="menusDescription3">Revisité</div>
+        </div>
+
+        <div class="effetDroite">
+            <div class="prix">18€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
             </div>
+        </div>
 
-            <div class="menuMicroCartes laPaletteDuGout6">
+    </div>
 
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Filet de turbot</div>
-                    <p id="menusDescription3">Aux agrumes</p>
-                </div>
-        
-                <div class="prix">44€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
+    <div class="menuMicroCartes element8">
+
+        <div class="menusDescription1">
+            <div class="menusDescription2">Macaron au chocolat d'exception</div>
+            <div class="menusDescription3">Et glace à la vanille de Madagascar</div>
+        </div>
+
+        <div class="effetDroite">
+            <div class="prix">22€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
             </div>
+        </div>
 
-        <!-- Desserts -->
+    </div>
 
-            <div id="desserts">Desserts</div>
+    <div class="menuMicroCartes element9">
 
-            <div class="menuMicroCartes laPaletteDuGout7">
+        <div class="menusDescription1">
+            <div class="menusDescription2">Mousse au chocolat</div>
+            <div class="menusDescription3">Au piment d'Espelette et à la truffe noire</div>
+        </div>
 
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Paris-Brest</div>
-                    <p id="menusDescription3">Revisité</p>
-                </div>
-        
-                <div class="prix">18€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
+        <div class="effetDroite">
+            <div class="prix">23€</div>
+            <div class="checkboxDroite">
+                <i class="fas fa-check-circle"></i>
             </div>
+        </div>              
 
-            <div class="menuMicroCartes laPaletteDuGout8">
+    </div>
 
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Macaron au chocolat d'exception</div>
-                    <p id="menusDescription3">Et glace à la vanille de Madagascar</p>
-                </div>
-        
-                <div class="prix">22€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
-            </div>
-
-            <div class="menuMicroCartes laPaletteDuGout9">
-
-                <div id="menusDescription1">
-                    <div id="menusDescription2">Mousse au chocolat</div>
-                    <p id="menusDescription3">Au piment d'Espelette et à la truffe noire</p>
-                </div>
-        
-                <div class="prix">23€</div>
-        
-                <div class="effetDroite">
-                    <div class="checkboxDroite">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-        
-            </div>               
-
-                <div class="menusCommander">
-                    <span>Commander</span>
-                </div>
-        <!-- Section restaurants -->
+    <div class="menusCommander">
+        <span>Commander</span>
+    </div>
 
 </main>
 <!-- # Principal # -->
 
 <!-- # Pied de page # -->
-
 <footer>
     <div id="sectionPiedDePage">      
         <ul>
