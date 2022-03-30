@@ -966,5 +966,43 @@ ul {
         margin-right: 10px;
         font-family: "Shrikhand", Helvetica, sans-serif;
     }
-    }
+  }
+    @media (min-width: 320px) and (max-width: 374px){
+        figure {
+          width: 93%;
+          border-radius: 15px 15px 15px 15px;
+          background: #FFFFFF;
+          box-shadow: 0px 3px 10px -5px black;
+          max-width: 300px;
+        }
+        .cartesNouveau {
+          background: #99E2D0;
+          width: 55px;
+          padding: 10px;
+          border-radius: 2px;
+          text-align: center;
+          margin-top: -188px;
+          margin-left: 215px;
+          position: absolute;
+          font-weight: lighter;
+          font-size: 14px;
+          color: #335f55;
+        }
+        .cartesCoeur1 {
+          position: absolute;
+          color: #000000;
+          margin-left: 250px;
+          margin-top: 15px;
+          font-size: 25px;
+          cursor: pointer;
+        }
+        .menusCoeurs1 {
+          position: absolute;
+          color: #000000;
+          margin-left: 270px;
+          margin-top: -50px;
+          font-size: 25px;
+          cursor: pointer;
+        }
+  }
     /* # Media queries # */
