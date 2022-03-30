@@ -694,7 +694,7 @@ a, a:hover, .a:focus, .a:active {
     }
     .cartesCoeur2 {
         position: absolute;
-        top: 1px;
+        margin-top: 1px;
         left: 0px;
         font-weight: bold !important;
 
@@ -764,7 +764,7 @@ a, a:hover, .a:focus, .a:active {
     }
     .menusCoeurs2 {
         position: absolute;
-        top: 1px;
+        margin-top: 1px;
         left: 0px;
         font-weight: bold !important;
 
