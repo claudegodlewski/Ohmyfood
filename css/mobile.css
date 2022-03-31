@@ -92,7 +92,8 @@ a, a:hover, .a:focus, .a:active {
   opacity: 0;
   -webkit-animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
           animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
-}
+          cursor: pointer;
+        }
 .element1 {
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
