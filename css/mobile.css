@@ -74,22 +74,16 @@ a, a:hover, .a:focus, .a:active {
   height: 69px;
   border-radius: 15px;
   margin: auto;
-  -webkit-box-shadow: 0px 2px 9px -6px black;
-          box-shadow: 0px 2px 9px -6px black;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 2px 9px -6px black;
   display: flex;
   overflow: hidden;
   position: relative;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   opacity: 0;
-  -webkit-animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
-          animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
-          cursor: pointer;
+  animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
+  cursor: pointer;
         }
 .element1 {
-  -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
           margin-left:auto;
           margin-right:auto;
@@ -97,7 +91,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element2 {
-  -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
           margin-left:auto;
           margin-right:auto;
@@ -105,7 +98,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element3 {
-  -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
           margin-left:auto;
           margin-right:auto;
@@ -113,7 +105,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element4 {
-  -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
           margin-left:auto;
           margin-right:auto;
@@ -121,9 +112,7 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element5 {
-  -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
-          -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
           margin-left:auto;
           margin-right:auto;
@@ -131,7 +120,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element6 {
-  -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
           margin-left:auto;
           margin-right:auto;
@@ -139,7 +127,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element7 {
-  -webkit-animation-delay: 1050ms;
           animation-delay: 1050ms;
           margin-left:auto;
           margin-right:auto;
@@ -147,7 +134,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element8 {
-  -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
           margin-left:auto;
           margin-right:auto;
@@ -155,7 +141,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .element9 {
-  -webkit-animation-delay: 1350ms;
           animation-delay: 1350ms;
           margin-left:auto;
           margin-right:auto;
@@ -163,7 +148,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee1 {
-  -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
           margin-left:auto;
           margin-right:auto;
@@ -171,7 +155,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee2 {
-  -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
           margin-left:auto;
           margin-right:auto;
@@ -179,7 +162,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee3 {
-  -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
           margin-left:auto;
           margin-right:auto;
@@ -187,7 +169,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee4 {
-  -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
           margin-left:auto;
           margin-right:auto;
@@ -195,9 +176,7 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee5 {
-  -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
-          -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
           margin-left:auto;
           margin-right:auto;
@@ -205,7 +184,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee6 {
-  -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
           margin-left:auto;
           margin-right:auto;
@@ -213,7 +191,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee7 {
-  -webkit-animation-delay: 1050ms;
           animation-delay: 1050ms;
           margin-left:auto;
           margin-right:auto;
@@ -221,7 +198,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee8 {
-  -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
           margin-left:auto;
           margin-right:auto;
@@ -229,7 +205,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee9 {
-  -webkit-animation-delay: 1350ms;
           animation-delay: 1350ms;
           margin-left:auto;
           margin-right:auto;
@@ -237,7 +212,6 @@ a, a:hover, .a:focus, .a:active {
   /* loop to add delay at each card */
 }
 .laNoteEnchantee10 {
-  -webkit-animation-delay: 1350ms;
           animation-delay: 1350ms;
           margin-left:auto;
           margin-right:auto;
@@ -246,8 +220,6 @@ a, a:hover, .a:focus, .a:active {
 }
 .menusDescription1 {
   width: 80%;
-  -webkit-transition: all 500ms;
-  -o-transition: all 500ms;
   transition: all 500ms;
   /* reduce the width when card hover */
   /* Dishes title */
@@ -259,51 +231,36 @@ a, a:hover, .a:focus, .a:active {
   margin-top: 10px;
   margin-left: 11px;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menusDescription3 {
   margin-top:10px;
   margin-left: 11px;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .effetDroite {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   right: -60px;
   height: 100%;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  -o-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, transform 500ms ease-in-out;
   /* option select appear with translation when card hover */
 }
 .menuMicroCartes:hover > .effetDroite {
-  -webkit-transform: translateX(-60px);
-      -ms-transform: translateX(-60px);
           transform: translateX(-60px);
 }
 .menuMicroCartes:hover .fa-check-circle {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 .menuMicroCartes:hover > .menusDescription1 {
   width: calc(80% - 60px);
 }
 .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   padding-bottom: 11px;
   width: 50px;
   font-weight:bold;
@@ -313,15 +270,9 @@ a, a:hover, .a:focus, .a:active {
 .checkboxDroite {
   background-color: #99E2D0;
   width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 15px 15px 0px;
   height: 100%;
 }
@@ -330,14 +281,8 @@ a, a:hover, .a:focus, .a:active {
 .fa-check-circle {
   font-size: 20px;
   color: white;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  -o-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
 /* # Spinner # */
@@ -351,7 +296,7 @@ a, a:hover, .a:focus, .a:active {
   height: 100%;
   background-color: #FFFFFF;
   z-index: 1;
-  animation: loader-disappear 3s  forwards;
+  animation: loader-disappear 3s forwards;
 }
 .fa-circle-notch {
   color: #FF79DA ;
@@ -417,7 +362,7 @@ a, a:hover, .a:focus, .a:active {
         margin-bottom: 60px;
         width: 215px;
         height: 50px;
-        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        background: linear-gradient(#FF79DA, #9356DC);
         box-shadow: 0px 3px 10px -7px black;
         border-radius: 25px;
         border: solid 0px;
@@ -435,7 +380,7 @@ a, a:hover, .a:focus, .a:active {
         margin-bottom: 60px;
         width: 215px;
         height: 50px;
-        background: -webkit-linear-gradient(#FF79DA, #9d6cd8);
+        background: linear-gradient(#FF79DA, #9d6cd8);
         /*box-shadow: 0px 4px 5px -2px black;*/
         box-shadow: 0px 3px 10px -5px black;
         border-radius: 25px;
@@ -694,7 +639,7 @@ a, a:hover, .a:focus, .a:active {
     /* Compatibilité Chrome */
 
     /* Effet de remplissage */
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         transform: scale(0);
     /* Effet de remplissage */
     }
@@ -764,7 +709,7 @@ a, a:hover, .a:focus, .a:active {
     /* Compatibilité Chrome */
 
     /* Effet de remplissage */
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         transform: scale(0);
     /* Effet de remplissage */
     }
@@ -832,7 +777,7 @@ a, a:hover, .a:focus, .a:active {
       margin-bottom:50px;
       width: 215px;
       height: 50px;
-      background: -webkit-linear-gradient(#FF79DA, #9356DC);
+      background: linear-gradient(#FF79DA, #9356DC);
       box-shadow: 0px 3px 10px -7px black;
       border-radius: 25px;
       border: solid 0px;
@@ -851,11 +796,11 @@ a, a:hover, .a:focus, .a:active {
     margin-bottom:50px;
     width: 215px;
     height: 50px;
-      background: -webkit-linear-gradient(#FF79DA, #9d6cd8);
-      /*box-shadow: 0px 4px 5px -2px black;*/
-      box-shadow: 0px 3px 10px -5px black;
-      border-radius: 25px;
-      border: solid 0px;
+    background: linear-gradient(#FF79DA, #9d6cd8);
+    /*box-shadow: 0px 4px 5px -2px black;*/
+    box-shadow: 0px 3px 10px -5px black;
+    border-radius: 25px;
+    border: solid 0px;
       }
 /* # Principal # */
 
