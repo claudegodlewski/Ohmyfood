@@ -296,7 +296,7 @@ a, a:hover, .a:focus, .a:active {
   height: 100%;
   background-color: #FFFFFF;
   z-index: 1;
-  animation: loader-disappear 3s forwards;
+  animation: loader-disappear 500ms 3s forwards;
 }
 .fa-circle-notch {
   color: #FF79DA ;
